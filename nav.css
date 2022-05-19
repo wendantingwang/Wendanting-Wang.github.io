@@ -8,9 +8,9 @@
     height: 100px;
     background: #2C2C34;
     z-index: 9; 
-}
-
-.nav{
+  }
+  
+  .nav{
     padding: 10px 10vw;
     display: flex;
     justify-content: space-between;
