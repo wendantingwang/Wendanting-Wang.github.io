@@ -2,11 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+  }   
+
   
-  }
   
   .navbar{
-    position:flex;
+    display: flex;
+    position: fixed;
+    box-shadow: ;
     top: 0;
     left: 0;
     width: 100%;
@@ -32,12 +35,13 @@
   
   
   .search{
-    width: 500px;
     display: flex;
-  
+    width: 500px;
+     
   }
   
   .search_box{
+
     width: 50%;
     height: 40px;
     padding: 10px;
@@ -109,3 +113,5 @@
   .link:hover{
     color: #3F75DB;
   }
+
+  
