@@ -1,0 +1,205 @@
+.product-list{
+    padding-top: 2rem;
+
+}
+
+
+.sort-by-box{
+    display: flex;
+    justify-content: right;
+    margin-right: 1.3rem;
+
+
+}
+.product-list select{
+    font-size: 10px;
+    color: #ffffff;
+
+    border-radius: 10px;
+    padding: 1rem 1rem 1rem 1rem;
+    text-transform: none;
+    background-color: #3b3c3d;
+}
+
+
+.list-box{
+    margin-top: 1rem;
+    display: flex;
+
+}
+
+
+.product-part{
+    flex-basis: 70%;
+    display: grid;
+
+}
+
+
+.filter-part{
+    flex-basis: 20%;
+    margin-right: 80px;
+}
+
+.filter{
+    border-radius: 10px;
+
+    padding: 20px 30px;
+    margin-top: 25px;
+    background-color: #3b3c3d;
+}
+
+.filter h2{
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.filter h3{
+    font-weight: bold;
+    margin: 20px 0 10px;
+    color: #ffffff;
+
+}
+
+.filter-item{
+
+    display: flex;
+    align-items: center;
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+
+.filter-item p{
+    flex: 1;
+
+}
+
+
+.filter-item input{
+    margin-right: 10px;
+    cursor: pointer;
+
+}
+
+
+.pagination{ 
+    background-color: #2C2C34;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+.pagination i{
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-right: 1rem;
+    margin-left: 1rem;
+ 
+}
+
+.pagination span{
+    color: #ffffff;
+    margin: 10px 5px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.pagination .current{
+    background-color: #427BE6;
+    color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 992px) {
+    .l-product-items {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    }
+  
+    /* .product-col-r-bottom {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    } */
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .l-product-items {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    .product {
+      margin-right: 1rem;
+      margin-left: 1rem;
+    }
+  
+    .products .text-light {
+      width: 50%;
+    }
+  }
+  
+
+
+
+
+  @media screen and (min-width: 1336px) {
+    .l-product-items {
+      grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: 1957px) {
+    .l-product-items {
+      grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
+@media screen and (min-width: 1957px) {
+    .l-product-items {
+      grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
+@media screen and (max-width: 961px) {
+    .list-box{
+        display: flex;
+        flex-direction: column;
+    
+    }
+
+    .sort-by-box{
+        display: flex;
+        justify-content: right;
+    
+    }
+
+    .filter-part{
+        justify-content: center;
+        margin: auto;
+        width: 95%;
+ 
+
+    }
+
+
+
+
+}
+
+
+ 
