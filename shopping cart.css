@@ -1,4 +1,10 @@
 
+:root {
+    --bg-dark: #3b3c3d;
+    --btn-blue: #427BE6;
+    --box-shadow: 0px 5px 10px 0px rgba(110, 135, 181, 0.58);
+    --box-shadow-hover: 0px 10px 20px 2px rgba(110, 135, 181, 0.58);
+  }
 
 
 .product-cart {
@@ -25,10 +31,6 @@
     display: grid;
     grid-template-columns: 100%;
     margin-bottom: 1.2rem;
-    /* border-radius: 7px 7px 0px 0px; */
-
-    /* box-shadow: inset 2px 2px 2px rgba(114, 113, 113, 0.83),
-        inset -2px -2px 2px #000000; */
 }
 
 .cart-product-info {
@@ -41,9 +43,6 @@
     grid-gap: 0rem 1, 3rem;
     padding: 1rem 1rem;
     border-bottom: 1px solid #dbdbdb;
-
-
-
 }
 
 .cart-image {
@@ -64,16 +63,12 @@
     display: flex;
     justify-content: space-between;
     padding: 0.5rem 0.8rem;
-
-
-
 }
 
 .remove {
     text-transform: uppercase;
     color: #000000;
     margin-top: 0.9rem;
-
 }
 
 .cart-quantity-controls-sm,
@@ -93,31 +88,24 @@
     font-weight: bold;
     font-size: 1.1rem;
     background-color: #c7d5f1;
-
-
-
-
 }
 
 .cart-quantity-controls-sm .minus,
 .cart-quantity-controls .minus {
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
-
 }
 
 .cart-quantity-controls-sm .add,
 .cart-quantity-controls .add {
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
-
 }
 
 .cart-product-name {
     font-weight: bold;
     color: #000000;
     margin-bottom: 0.3rem;
-
 }
 
 .cart-price-sm {
@@ -176,10 +164,6 @@
 
 
 
-
-
-
-
 @media only screen and (min-width: 768px) {
 
     .cart-quantity-md,
@@ -196,8 +180,6 @@
 
     .cart-item form:first-child {
         border-top: 1px solid #efefef;
-
-
     }
 
 
@@ -207,12 +189,10 @@
         border: none;
         display: flex;
         border-bottom: 1px solid #efefef;
-
     }
 
     .cart-controls-sm {
         display: none;
-
     }
 
     .cart-product {
@@ -231,7 +211,6 @@
         padding-bottom: 2rem;
         border-radius: 10px 10px 10px 10px;
         margin-bottom: 2rem;
-
     }
 
     .cart-total {
@@ -245,10 +224,6 @@
 
     }
 
-
-
-
-
     .cart-collection {
         margin-top: 1rem;
 
@@ -259,7 +234,6 @@
         display: flex;
         margin-left: 3rem;
         margin-right: 4rem;
-
     }
 
     .cart-header p {
@@ -267,9 +241,6 @@
         color: #000000;
         width: 13%;
         text-align: right;
-
-
-
     }
 
 
@@ -279,7 +250,6 @@
         flex: 1;
         text-align: left;
         padding-left: 0.5rem;
-
     }
 
 
@@ -287,7 +257,6 @@
     .cart-action-button {
         justify-content: flex-end;
         flex-direction: row;
-
     }
 
     .caret-total p:first-child {
@@ -304,7 +273,4 @@
         margin-right: 1.2rem;
         order: 0;
     }
-
-
-
 }

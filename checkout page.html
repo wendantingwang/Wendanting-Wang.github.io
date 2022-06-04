@@ -8,7 +8,6 @@
     <title>GameKastle</title>
     <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="home.css ">
-    <link rel="stylesheet" href="script.js">
     <link rel="stylesheet" href="product page.css">
     <link rel="stylesheet" href="shopping cart.css">
     <link rel="stylesheet" href="checkout.css">
@@ -16,25 +15,78 @@
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="nav">
-            <img src="./image/gk_logo.png" class="brand_logo" alt="">
-            <div class="nav_items">
-                <ul class="links_container">
-                    <li class="link_item"><a href="#" class="link">Games</a></li>
-                    <li class="link_item"><a href="#" class="link">Publishers</a></li>
-                    <li class="link_item"><a href="#" class="link">Best Sellers</a></li>
-                    <li class="link_item"><a href="#" class="link">New Arrivals</a></li>
-                </ul>
-                <div class="search">
-                    <input type="text" class="search_box" placeholder="search games...">
-                    <button class="search_btn"><img src="./image/search.png" class="container_icon" alt=""></button>
-                </div>
-                <a href="#"><img src="./image/user.png" class="container" alt=""></a>
-                <a href="#"><img src="./image/shopping-cart.png" class="container" alt=""></a>
-            </div>
+    <!-- navnar section -->
+
+    <header class="header">
+
+        <a href="./index.html" class="logo"><img src="./image/gk_logo.png" alt=""></a>
+
+        <nav class="navbar">
+            <a href="./index.html">home</a>
+            <a href="#">Publishers</a>
+            <a href="#">Best Sellers</a>
+            <a href="./product listing.html">New Arrivals</a>
+            <a href="#">All Products</a>
+
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-user" id="login-btn"></div>
         </div>
-    </nav>
+
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <div class="shopping-cart">
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="./image/product_1.png" alt="">
+                <div class="content">
+                    <h3>Oath: Chronicles Of Empire</h3>
+                    <span class="price">$96.00</span>
+                    <span class="quantity">qty : 1</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="./image/product_2.png" alt="">
+                <div class="content">
+                    <h3>KINGDOM RUSH: RIFT IN TIME</h3>
+                    <span class="price">$96.00</span>
+                    <span class="quantity">qty : 1</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="./image/product_3.png" alt="">
+                <div class="content">
+                    <h3>TAPESTRY: PLANS AND PLOYS</h3>
+                    <span class="price">$96.00</span>
+                    <span class="quantity">qty : 1</span>
+                </div>
+            </div>
+            <div class="total"> total : $000.00 </div>
+            <a href="#" class="btn">checkout</a>
+            <a href="./shopping cart.html" class="btn">view cart</a>
+
+        </div>
+
+        <form action="" class="login-form">
+            <h3>login now</h3>
+            <input type="email" placeholder="your email" class="box">
+            <input type="password" placeholder="your password" class="box">
+            <p>forget your password <a href="#">click here</a></p>
+            <p>don't have an account <a href="#">create now</a></p>
+            <input type="submit" value="login now" class="btn">
+        </form>
+
+    </header>
+    <!-- navnar section end -->
 
     <!-- breadcumb -->
     <div class="breadcumb">
@@ -42,26 +94,25 @@
         <span><i class="fa-solid fa-chevron-left"></i></span>
         <a href="./products.html">Checkout</a>
     </div>
+    <!-- breadcumb end -->
+
 
 
     <!-- checkout -->
     <section>
         <div class="c-wrapper">
-            <header class="header">
-                <h1 class="lg-title">Checkout</h1>
-            </header>
+            <h1 class="lg-title">Checkout</h1>
 
             <!-- purchase info -->
             <main class="main">
                 <section class="products-flow">
-                    <article class="product">
+                    <article class="c-product">
                         <img class="product__image" src="./image/product_1.png" alt="Oath: Chronicles Of Empire" />
                         <div class="product__details">
                             <div>
                                 <h3 class="product__title">Oath: Chronicles Of Empire</h3>
                                 <div class="price">
                                     <p class="price__after">$96.00</p>
-                                    <!-- <s class="price__before">$94.99</s> -->
                                 </div>
                             </div>
                             <div class="quantity">
@@ -71,14 +122,13 @@
                             </div>
                         </div>
                     </article>
-                    <article class="product">
+                    <article class="c-product">
                         <img class="product__image" src="./image/product_2.png" alt="KINGDOM RUSH: RIFT IN TIME" />
                         <div class="product__details">
                             <div>
                                 <h3 class="product__title">KINGDOM RUSH: RIFT IN TIME</h3>
                                 <div class="price">
                                     <p class="price__after">$74.99</p>
-                                    <!-- <s class="price__before">$124.99</s> -->
                                 </div>
                             </div>
                             <div class="quantity">
@@ -89,14 +139,13 @@
                         </div>
                     </article>
 
-                    <article class="product">
+                    <article class="c-product">
                         <img class="product__image" src="./image/product_3.png" alt="TAPESTRY: PLANS AND PLOYS" />
                         <div class="product__details">
                             <div>
                                 <h3 class="product__title">TAPESTRY: PLANS AND PLOYSE</h3>
                                 <div class="price">
                                     <p class="price__after">$74.99</p>
-                                    <!-- <s class="price__before">$124.99</s> -->
                                 </div>
                             </div>
                             <div class="quantity">
@@ -106,6 +155,7 @@
                             </div>
                         </div>
                     </article>
+                    <!-- purchase info end -->
 
                     <!-- checkout info -->
                     <div class="checkout-info">
@@ -120,8 +170,9 @@
                         </div>
                     </div>
                 </section>
+                <!-- checkout info end -->
 
-
+                <!-- checkout process -->
                 <form class="forms flow" onsubmit="return false;">
                     <section class="form">
                         <h2 class="form__title">Contact information</h2>
@@ -141,7 +192,6 @@
 
                     <section class="form">
                         <h2 class="form__title">Shipping address</h2>
-
                         <div class="form__group">
                             <label for="name">Full name</label>
                             <i class="fas fa-user-circle icon icon--left"></i>
@@ -158,7 +208,6 @@
                             <i class="fas fa-city icon icon--left"></i>
                             <input type="text" name="city" id="city" placeholder="Your city..." required />
                         </div>
-
                         <div class="county-postcode">
                             <div class="form__group">
                                 <label for="country-choice">Country</label>
@@ -183,10 +232,9 @@
                             </div>
                         </div>
                     </section>
-                    
+
                     <section class="form">
                         <h2 class="form__title">Payment</h2>
-
                         <div class="form__group">
                             <label for="name">Payment Method</label>
                             <div class="card-holder">
@@ -227,9 +275,9 @@
                     </div>
                 </form>
             </main>
-
-
+            <!-- checkout process end -->
     </section>
+    <!-- checkout end-->
 
     <!-- footer-->
 
@@ -276,9 +324,12 @@
             </div>
 
         </div>
+    </section>
+    <!-- footer end -->
 
 
 
+    <script src="js/script.js"></script>
 
 
 

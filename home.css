@@ -1,3 +1,14 @@
+:root {
+  --bg-dark: #3b3c3d;
+  --btn-blue: #427BE6;
+  --box-shadow: 0px 5px 10px 0px rgba(110, 135, 181, 0.58);
+  --box-shadow-hover: 0px 10px 20px 2px rgba(110, 135, 181, 0.58);
+  --blue-light: #c7d5f1;
+
+
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +19,7 @@
   text-decoration: none;
   text-transform: capitalize;
   transition: .2s linear;
+
 }
 
 html {
@@ -38,6 +50,8 @@ section {
   cursor: pointer;
   font-size: 1.7rem;
   text-decoration: none;
+
+
 }
 
 
@@ -49,9 +63,10 @@ section {
 
 .home {
   display: flex;
+  margin-top: 5rem;
   align-items: center;
   min-height: 60vh;
-  background: url(./image/home_bg.jpeg)no-repeat;
+  background: url(./image/home_bg.png)no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -141,6 +156,13 @@ section {
   cursor: pointer;
   text-align: center;
   border-radius: 10px;
+  box-shadow: 0px 5px 10px 0px rgba(110, 135, 181, 0.58);
+}
+
+
+.cat-center .cat:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px 2px rgba(110, 135, 181, 0.58);
 }
 
 .cat-center .cat:not(:last-child) {
@@ -165,7 +187,6 @@ section {
   left: 50%;
   transform: translateX(-50%);
   color: #ffffff;
-  /* background-color: var(--white); */
   width: 18rem;
   height: 5rem;
   line-height: 5rem;
@@ -176,7 +197,7 @@ section {
 
 .ban_btn {
   display: inline-block;
-  margin-top: 3rem;
+  padding-top: 3rem;
   border-radius: 5rem;
   background: #ffffff;
   color: #000000;
@@ -241,7 +262,6 @@ img {
 .lg-title,
 .md-title,
 .sm-title {
-  /* font-family: 'Roboto', sans-serif; */
   padding: 0.6rem 0;
   text-transform: capitalize;
 }
@@ -257,7 +277,6 @@ img {
 
 .md-title {
   font-size: 2rem;
-  /* font-family: 'Roboto', sans-serif; */
 }
 
 .sm-title {
@@ -276,10 +295,6 @@ img {
 
 /* product section */
 
-/* 
-.products{
-  padding: 3.2rem 0;
-} */
 .products .text-light {
   text-align: center;
   width: 70%;
@@ -289,7 +304,16 @@ img {
 .product {
   margin: 2rem;
   position: relative;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px 0px rgba(110, 135, 181, 0.58);
 }
+
+.product:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px 2px rgba(110, 135, 181, 0.58);
+
+}
+
 
 .product-content {
   border-top-left-radius: 10px;
@@ -297,10 +321,10 @@ img {
   background: #3b3c3d;
   padding: 3rem 0.5rem 2rem 0.5rem;
   cursor: pointer;
+
 }
 
 .product-img {
-  /* box-shadow: 20 20 20px px var(--white-light); */
   width: 200px;
   height: 200px;
   margin: 0 auto;
@@ -336,7 +360,7 @@ img {
 }
 
 .btn-cart:hover {
-  background: var(--carribean-green);
+  background: var(--bg-dark);
 }
 
 .btn-buy {
@@ -345,7 +369,7 @@ img {
 }
 
 .btn-buy:hover {
-  background: var(--carribean-green);
+  background: var(--bg-dark);
   color: #fff;
 }
 
@@ -353,7 +377,9 @@ img {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   background: #c7d5f1;
+
   padding: 2rem;
+
 }
 
 .product-info-top {
@@ -401,9 +427,7 @@ img {
   transform: scale(1.1);
 }
 
-/* .product:hover .product-img{
-  background: var(--carribean-green);
-} */
+
 .product:hover .product-btns {
   opacity: 1;
 }
@@ -432,10 +456,6 @@ img {
     gap: 2rem;
   }
 
-  /* .product-col-r-bottom {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  } */
 }
 
 @media screen and (min-width: 1200px) {
@@ -458,19 +478,10 @@ img {
     grid-template-columns: repeat(4, 1fr);
   }
 
-  /* .product-collection-wrapper {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  } */
-
   .flex {
     height: 60vh;
   }
 
-
-  /* .product-col-left {
-    height: 121.5vh;
-  } */
 }
 
 
@@ -479,6 +490,7 @@ img {
 .publishers .container-publishers {
   width: 100%;
   margin-bottom: 3rem;
+
 }
 
 
@@ -491,15 +503,19 @@ img {
   width: 80px;
   height: 80px;
   margin-bottom: 4.5rem;
-  /* margin-bottom: 110%; */
   border-radius: 50%;
   padding: 10px 10px;
   background-color: #ffffff;
+  box-shadow: 0px 5px 10px 0px rgba(110, 135, 181, 0.58);
 }
 
-/* .publishers .logo-item{
-  margin-left: 3rem;
-} */
+.publishers .logo-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px 2px rgba(110, 135, 181, 0.58);
+
+}
+
+
 
 
 .publishers .logo-item .logo-box img {
@@ -516,14 +532,6 @@ img {
   transform: scale(1.1);
 }
 
-/* .publishers .logo-item span{
-  width: 20px;
-  height: 20px;
-  background-color: #ffffff;
-  border-radius: 50%;
-  font-size: 2rem;
-  margin: 0 auto;
-} */
 
 .publishers .logo-item h2 {
   margin: 1.5rem 0;
@@ -679,7 +687,3 @@ img {
   height: 3rem;
   display: block;
 }
-
-
-
-

@@ -8,32 +8,83 @@
     <title>GameKastle</title>
     <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="home.css ">
-    <link rel="stylesheet" href="script.js">
     <link rel="stylesheet" href="product page.css">
     <script src="https://kit.fontawesome.com/b1514f037a.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="nav">
-            <img src="./image/gk_logo.png" class="brand_logo" alt="">
-            <div class="nav_items">
-                <ul class="links_container">
-                    <li class="link_item"><a href="#" class="link">Games</a></li>
-                    <li class="link_item"><a href="#" class="link">Publishers</a></li>
-                    <li class="link_item"><a href="#" class="link">Best Sellers</a></li>
-                    <li class="link_item"><a href="#" class="link">New Arrivals</a></li>
-                </ul>
-                <div class="search">
-                    <input type="text" class="search_box" placeholder="search games...">
-                    <button class="search_btn"><img src="./image/search.png" class="container_icon" alt=""></button>
-                </div>
-                <a href="#"><img src="./image/user.png" class="container" alt=""></a>
-                <a href="#"><img src="./image/shopping-cart.png" class="container" alt=""></a>
-            </div>
-        </div>
-    </nav>
+    <!-- navnar section -->
 
+    <header class="header">
+
+        <a href="./index.html" class="logo"><img src="./image/gk_logo.png" alt=""></a>
+
+        <nav class="navbar">
+            <a href="./index.html">home</a>
+            <a href="#">Publishers</a>
+            <a href="#">Best Sellers</a>
+            <a href="./product listing.html">New Arrivals</a>
+            <a href="#">All Products</a>
+
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-user" id="login-btn"></div>
+        </div>
+
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <div class="shopping-cart">
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="./image/product_1.png" alt="">
+                <div class="content">
+                    <h3>Oath: Chronicles Of Empire</h3>
+                    <span class="price">$96.00</span>
+                    <span class="quantity">qty : 1</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="./image/product_2.png" alt="">
+                <div class="content">
+                    <h3>KINGDOM RUSH: RIFT IN TIME</h3>
+                    <span class="price">$96.00</span>
+                    <span class="quantity">qty : 1</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="./image/product_3.png" alt="">
+                <div class="content">
+                    <h3>TAPESTRY: PLANS AND PLOYS</h3>
+                    <span class="price">$96.00</span>
+                    <span class="quantity">qty : 1</span>
+                </div>
+            </div>
+            <div class="total"> total : $000.00 </div>
+            <a href="#" class="btn">checkout</a>
+            <a href="./shopping cart.html" class="btn">view cart</a>
+
+        </div>
+
+        <form action="" class="login-form">
+            <h3>login now</h3>
+            <input type="email" placeholder="your email" class="box">
+            <input type="password" placeholder="your password" class="box">
+            <p>forget your password <a href="#">click here</a></p>
+            <p>don't have an account <a href="#">create now</a></p>
+            <input type="submit" value="login now" class="btn">
+        </form>
+
+    </header>
+    <!-- navnar section end -->
 
 
 
@@ -45,12 +96,13 @@
         <span><i class="fa-solid fa-chevron-left"></i></span>
         <a href="./product-detail.html">Oath: Chronicles Of Empire</a>
     </div>
+    <!-- breadcumb end -->
 
 
 
 
 
-    <!-- prodetails -->
+    <!-- product details -->
     <section class="prodetails">
         <div class="single-pro-image">
             <img src="./image/product_1.png" class="mainimg" id=“MainImg” alt="">
@@ -126,6 +178,7 @@
         </p>
 
     </section>
+    <!-- product details end -->
 
 
 
@@ -255,6 +308,7 @@
                     </div>
                 </div>
     </section>
+    <!-- customer review end -->
 
 
 
@@ -409,6 +463,7 @@
                     </div>
                     <!-- end of single product -->
     </section>
+    <!-- product recommendations end-->
 
 
 
@@ -461,39 +516,11 @@
 
 
     </section>
+    <!-- footer end-->
 
 
+    <script src="js/script.js"></script>
 
-    <!-- 
-    <script>
-        var MainImg = document.getElementById ("MainImg")
-        var smallimg = document.getElementsByClassName ("small-img")
-
-        smallimg[0].onclick = function(){
-            MainImg.src = smallimg[0].src;
-
-        }
-        smallimg[1].onclick =function(){
-            MainImg.src = smallimg[1].src;
-
-        }
-
-        smallimg[2].onclick =function(){
-            MainImg.src = smallimg[2].src;
-
-        }
-
-        smallimg[3].onclick =function(){
-            MainImg.src = smallimg[3].src;
-        }
-
-        smallimg[4].onclick =function(){
-            MainImg.src = smallimg[4].src;
-
-        }
-
-    </script>
-    <script src="script.js"></script> -->
 
 
 </body>

@@ -8,7 +8,6 @@
     <title>GameKastle</title>
     <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="home.css ">
-    <link rel="stylesheet" href="script.js">
     <link rel="stylesheet" href="product list.css">
     <link rel="stylesheet" href="product page.css">
 
@@ -18,51 +17,106 @@
 <body>
 
     <!-- navnar section -->
-    <nav class="navbar">
-        <div class="nav">
-            <img src="./image/gk_logo.png" class="brand_logo" alt="">
-            <div class="nav_items">
-                <ul class="links_container">
-                    <li class="link_item"><a href="#" class="link">Games</a></li>
-                    <li class="link_item"><a href="#" class="link">Publishers</a></li>
-                    <li class="link_item"><a href="#" class="link">Best Sellers</a></li>
-                    <li class="link_item"><a href="#" class="link">New Arrivals</a></li>
-                </ul>
-                <div class="search">
-                    <input type="text" class="search_box" placeholder="search games...">
-                    <button class="search_btn"><img src="./image/search.png" class="container_icon" alt=""></button>
-                </div>
-                <a href="#"><img src="./image/user.png" class="container" alt=""></a>
-                <a href="#"><img src="./image/shopping-cart.png" class="container" alt=""></a>
-            </div>
+
+    <header class="header">
+
+        <a href="./index.html" class="logo"><img src="./image/gk_logo.png" alt=""></a>
+
+        <nav class="navbar">
+            <a href="./index.html">home</a>
+            <a href="#">Publishers</a>
+            <a href="#">Best Sellers</a>
+            <a href="./product listing.html">New Arrivals</a>
+            <a href="#">All Products</a>
+
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-user" id="login-btn"></div>
         </div>
-    </nav>
 
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
 
+        <div class="shopping-cart">
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="./image/product_1.png" alt="">
+                <div class="content">
+                    <h3>Oath: Chronicles Of Empire</h3>
+                    <span class="price">$96.00</span>
+                    <span class="quantity">qty : 1</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="./image/product_2.png" alt="">
+                <div class="content">
+                    <h3>KINGDOM RUSH: RIFT IN TIME</h3>
+                    <span class="price">$96.00</span>
+                    <span class="quantity">qty : 1</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="./image/product_3.png" alt="">
+                <div class="content">
+                    <h3>TAPESTRY: PLANS AND PLOYS</h3>
+                    <span class="price">$96.00</span>
+                    <span class="quantity">qty : 1</span>
+                </div>
+            </div>
+            <div class="total"> total : $000.00 </div>
+            <a href="#" class="btn">checkout</a>
+            <a href="./shopping cart.html" class="btn">view cart</a>
+
+        </div>
+
+        <form action="" class="login-form">
+            <h3>login now</h3>
+            <input type="email" placeholder="your email" class="box">
+            <input type="password" placeholder="your password" class="box">
+            <p>forget your password <a href="#">click here</a></p>
+            <p>don't have an account <a href="#">create now</a></p>
+            <input type="submit" value="login now" class="btn">
+        </form>
+
+    </header>
+
+    <!-- navnar section end -->
+
+    
+    <!-- breadcumb -->
     <div class="breadcumb">
         <a href="./index.html">home</a>
         <span><i class="fa-solid fa-chevron-left"></i></span>
         <a href="./products.html">New Arrivals</a>
     </div>
+    <!-- breadcumb end-->
 
 
-
+    <!-- product listing section -->
     <section class="product-list">
         <h1 class="lg-title">New Arrivals</h1>
         <div class="sort-by-box">
-      
-        <select class="sort-by">
-            <option value="Sort by">sort by</option>
-            <option value="price, low to high">price, low to high</option>
-            <option value="price, high to low">price, high to low</option>
-            <option value="Title, A-Z">Title, A-Z</option>
-            <option value="Title, Z-A">Title, Z-A</option>
-            <option value="Date, New to Old">Date, New to Old</option>
-            <option value="Date, Old to New">Date, Old to New</option>
-        </select>
-    </div>
 
-       
+            <select class="sort-by">
+                <option value="Sort by">sort by</option>
+                <option value="price, low to high">price, low to high</option>
+                <option value="price, high to low">price, high to low</option>
+                <option value="Title, A-Z">Title, A-Z</option>
+                <option value="Title, Z-A">Title, Z-A</option>
+                <option value="Date, New to Old">Date, New to Old</option>
+                <option value="Date, Old to New">Date, Old to New</option>
+            </select>
+        </div>
+
+        <!-- filter part -->
         <div class="list-box">
             <div class="filter-part">
                 <div class="filter">
@@ -103,11 +157,10 @@
                     </div>
                 </div>
             </div>
+            <!-- filter part end -->
 
-
+            <!-- product part -->
             <div class="product-part">
-                <!-- <div class="products"> -->
-
                 <div class="l-product-items">
                     <!-- single product -->
                     <div class="product">
@@ -627,11 +680,14 @@
                     <!-- end of single product -->
                 </div>
             </div>
+            <!-- product part end -->
     </section>
+    <!-- product listing section end -->
+
 
     <div class="pagination">
         <i class="fa-solid fa-angle-left"></i>
-       
+
         <span class="current">1</span>
         <span>2</span>
         <span>3</span>
@@ -640,12 +696,7 @@
         <span>&middot; &middot; &middot; &middot; </span>
         <span>15</span>
         <i class="fa-solid fa-angle-right"></i>
-        
- 
-
     </div>
-
-
 
 
 
@@ -693,7 +744,12 @@
             </div>
 
         </div>
-
-
-
     </section>
+
+    <!-- footer section end -->
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
