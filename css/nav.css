@@ -44,6 +44,10 @@
 
 }
 
+.header .logoicon{
+    display: none;
+}
+
 
 
 .header .navbar a {
@@ -114,7 +118,7 @@
 }
 
 .header .search-form label:hover {
-    color: var(--orange);
+    color: var(--btn-blue);
 }
 
 .header .shopping-cart {
@@ -161,7 +165,7 @@
 }
 
 .header .shopping-cart .box .content h3 {
-    margin-top: -4.5rem;
+    margin-top: -3rem;
     font-size: 10px;
     padding-bottom: 1rem;
 }
@@ -169,17 +173,19 @@
 .header .shopping-cart .box .content span {
     font-weight: 300;
     font-size: 1rem;
+    margin-bottom: .5rem;
 }
 
 .header .shopping-cart .box .content .quantity {
     padding-left: 1rem;
+    margin-top: .5rem;
 }
 
 .header .shopping-cart .total {
     font-size: 2rem;
     padding: 1rem 0;
     text-align: center;
-    color: var(--black);
+    color: rgb(0, 0, 0);
 }
 
 .header .shopping-cart .btn {
@@ -224,7 +230,7 @@
 .header .login-form p {
     font-size: 1rem;
     padding: .5rem 0;
-    color: var(--light-color);
+    color: #000000;
 }
 
 .header .login-form p a {
@@ -233,7 +239,24 @@
 }
 
 
+/* Media Queries */
 
+@media (max-width:480px) {
+
+
+    .header .logo{
+        display: none;
+    }
+
+    .header .logoicon{
+        display: flex;
+        width: 60px;
+        height: 60px;
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+    }
+
+}
 
 @media (max-width:991px) {
     .header {
