@@ -150,13 +150,27 @@
     order: 1;
     background: #ffffff;
     color: #000000;
+    cursor: pointer;
 }
 
-.cart-action-button a:last-child {
-
+.cart-action-button a:first-child:hover {
     background: #427BE6;
     color: #ffffff;
 }
+
+
+.cart-action-button a:last-child {
+    background: #427BE6;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.cart-action-button a:last-child:hover{
+    background: var(--bg-dark);
+    color: #ffffff;
+}
+
+
 
 .cart-header {
     display: none;

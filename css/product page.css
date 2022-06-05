@@ -129,7 +129,17 @@
     border-radius: 10px;
     color: #ffffff;
     font-size: 20px;
+    cursor: pointer;
+    
 }
+
+.prodetails .single-pro-details button:hover{
+    background-color: var(--bg-dark);
+    
+}
+
+
+
 
 
 .description{

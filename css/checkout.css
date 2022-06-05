@@ -1,3 +1,13 @@
+:root {
+  --bg-dark: #3b3c3d;
+  --btn-blue: #427BE6;
+  --box-shadow: 0px 5px 10px 0px rgba(110, 135, 181, 0.58);
+  --box-shadow-hover: 0px 10px 20px 2px rgba(110, 135, 181, 0.58);
+  --blue-light: #c7d5f1;
+}
+
+
+
 .c-wrapper {
   padding-bottom: 4rem;
 }
@@ -51,7 +61,7 @@
 }
 
 
-.quantity {
+.c-quantity {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -184,6 +194,14 @@ select {
   border-radius: 10px;
   margin: auto;
 }
+
+.btn-continue:hover{
+  background-color: var(--bg-dark);
+}
+
+
+
+
 
 
 
