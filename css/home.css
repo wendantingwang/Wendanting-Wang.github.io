@@ -4,7 +4,6 @@
   --box-shadow: 0px 5px 10px 0px rgba(110, 135, 181, 0.58);
   --box-shadow-hover: 0px 10px 20px 2px rgba(110, 135, 181, 0.58);
   --blue-light: #c7d5f1;
-  --font-display: 'Noto Sans', sans-serif;
 }
 
 
@@ -34,19 +33,6 @@ section {
   background-color: #2C2C34;
 }
 
-h1,
-h2,
-h3{
-  font-family: var(--font-display);
-}
-
-p{
-  font-family: var(--font-display);
-}
-
-span{
-  font-family: var(--font-display);
-}
 
 
 /* home section */
