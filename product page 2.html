@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/home.css ">
+    <link rel="stylesheet" href="./css/product list.css">
+    <link rel="stylesheet" href="./css/product page.css">
+    <link rel="stylesheet" href="./css/shopping cart.css">
+    <link rel="stylesheet" href="./css/checkout.css">
+
+    <script src="https://kit.fontawesome.com/b1514f037a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- navnar section -->
+
+    <header class="header">
+
+        <a href="./index.html" class="logo"><img src="./image/gk_logo.png" alt=""></a>
+        <a href="./index.html" class="logoicon"><img src="./image/logoicon.png" alt=""></a>
+
+        <nav class="navbar">
+            <a href="./index.html">home</a>
+            <a href="#">Publishers</a>
+            <a href="#">Best Sellers</a>
+            <a href="./product listing.html">New Arrivals</a>
+            <a href="#">All Products</a>
+
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-user" id="login-btn"></div>
+        </div>
+
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <div class="shopping-cart">
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <a href="./product page.html"><img src="./image/product_1.png" alt=""></a>
+                <div class="content">
+                    <h3>Oath: Chronicles Of Empire</h3>
+                    <span class="price">$96.00</span>
+                    <span class="quantity">qty : 1</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="./image/product_2.png" alt="">
+                <div class="content">
+                    <h3>KINGDOM RUSH: RIFT IN TIME</h3>
+                    <span class="price">$100.00</span>
+                    <span class="quantity">qty : 1</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="./image/product_3.png" alt="">
+                <div class="content">
+                    <h3>TAPESTRY: PLANS AND PLOYS</h3>
+                    <span class="price">$80.00</span>
+                    <span class="quantity">qty : 1</span>
+                </div>
+            </div>
+            <div class="total"> total : $276.00 </div>
+            <a href="./checkout page.html" class="btn">checkout</a>
+            <a href="./shopping cart.html" class="btn">view cart</a>
+
+        </div>
+
+        <form action="" class="login-form">
+            <h3>login now</h3>
+            <input type="email" placeholder="your email" class="box">
+            <input type="password" placeholder="your password" class="box">
+            <p>forget your password <a href="#">click here</a></p>
+            <p>don't have an account <a href="#">create now</a></p>
+            <button class="btn">Login Now</button>
+        </form>
+
+    </header>
+    <!-- navnar section end -->
+
+
+
+    <!-- breadcumb -->
+    <div class="breadcumb">
+        <a href="./index.html">home</a>
+        <span><i class="fa-solid fa-chevron-left"></i></span>
+        <a href="./product listing.html">New Arrivals</a>
+        <span><i class="fa-solid fa-chevron-left"></i></span>
+        <a href="#">Oath: Chronicles Of Empire</a>
+    </div>
+    <!-- breadcumb end -->
+
+
+
+
+
+    <!-- product details -->
+    <section class="prodetails">
+        <div class="single-pro-image">
+            <img src="./image/product_1.png" class="mainimg" id=“MainImg” alt="">
+            <div class="small-img-group">
+                <div class="small-img-col">
+                    <img src="./image/product_sm1.jpeg" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="./image/product_sm2.jpeg" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="./image/product_sm3.jpeg" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="./image/product_sm4.jpeg" class="small-img" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="single-pro-details">
+            <h6 class="sm-title">Board Game</h6>
+            <h4 class="md-title">Oath: Chronicles of Empire</h4>
+            <span class="user-rating">
+                <i class='fas fa-star'></i>
+                <i class='fas fa-star'></i>
+                <i class='fas fa-star'></i>
+                <i class='fas fa-star'></i>
+                <i class='fas fa-star'></i>
+            </span>
+            <h2 class="lg-title">$ 120.00</h2>
+            <h2 class="lg-title">$ 96.00</h2>
+            <div class="game-info">
+                <div class="game-item">
+                    <i class="fa-solid fa-chess-board fa-2xl"></i>
+                    <p>1-6 player</p>
+                </div>
+                <div class="game-item">
+                    <i class="fa-solid fa-user fa-2xl"></i>
+                    <p>Ages 10+</p>
+                </div>
+                <div class="game-item">
+                    <i class="fa-solid fa-clock fa-2xl"></i>
+                    <p>45-120 min</p>
+                </div>
+            </div>
+            <div class="quantity buttons_added">
+                <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max=""
+                    name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern=""
+                    inputmode=""><input type="button" value="+" class="plus">
+            </div>
+            <button>Add To Cart</button>
+        </div>
+    </section>
+
+    <section class="product-des">
+        <h1 class="lg-title">Description</h1>
+        <p>Oath: Chronicles of Empire and Exile is a one to six player strategy game where players will guide the course
+            of history in an ancient land. They might attempt to bolster power of the Chancellor or scheme to bring the
+            kingdom to ruin. The consequences of one game will ripple through those that follow, changing what resources
+            and actions future players may have at their disposal and even altering the game's core victory condition.
+        </p>
+
+
+        <p>At the end of each game of Oath: Chronicles of Empire and Exile, players will take account of what happened
+            in their game during the Chronicle Phase. During this phase, the game’s board will be re-centered around the
+            territory of the game’s victor, the victory condition may be adjusted, and new cards will be introduced to
+            the deck depending on how the previous game was won.
+        </p>
+
+
+        <p>When they have completed this process, they will have advanced the history of their world by a generation
+            and set the stage for the next crisis.
+        </p>
+
+    </section>
+    <!-- product details end -->
+
+
+
+
+
+
+
+    <!-- customer review -->
+    <section class="customer-review">
+        <div class="box">
+            <div class="lg-title">
+                customer review
+            </div>
+            <div class="review-container">
+                <div class="user-rate">
+                    <div class="user-info">
+                        <div class="user-avt">
+                            <img src="./image/u4.png" alt="">
+                        </div>
+                        <div class="user-name">
+                            <span class="name">William H.</span>
+                            <span class="user-rating">
+                                <i class='fas fa-star'></i>
+                                <i class='fas fa-star'></i>
+                                <i class='fas fa-star'></i>
+                                <i class='fas fa-star'></i>
+                                <i class='fas fa-star'></i>
+                            </span>
+                            <div>03/01/2021</div>
+                        </div>
+                    </div>
+                    <div class="user-rate-content">
+                        The game has high quality components which make it a pleasure to play.
+                        We like the way it is more collaborative than competitive and any competition is just with
+                        yourself.
+                    </div>
+                </div>
+                <div class="user-rate">
+                    <div class="user-info">
+                        <div class="user-avt">
+                            <img src="./image/u2.png" alt="">
+                        </div>
+                        <div class="user-name">
+                            <span class="name">Joyce Z.</span>
+                            <span class="user-rating">
+                                <i class='fas fa-star'></i>
+                                <i class='fas fa-star'></i>
+                                <i class='fas fa-star'></i>
+                                <i class='fas fa-star'></i>
+                                <i class='fas fa-star'></i>
+                            </span>
+                            <div>02/16/2021</div>
+                        </div>
+                    </div>
+                    <div class="user-rate-content">
+                        My partner and I love playing board games together and are very competitive. Oath provides a
+                        great amount of competition without being too aggressive. It is a beautiful and addictive board
+                        game. We haven't even had the chance to try the one player version yet, because none of us want
+                        to miss out on playing!
+                    </div>
+                </div>
+                <div class="user-rate">
+                    <div class="user-info">
+                        <div class="user-avt">
+                            <img src="./image/u3.png" alt="">
+                        </div>
+                        <div class="user-name">
+                            <span class="name">Mike J.</span>
+                            <span class="user-rating">
+                                <i class='fas fa-star'></i>
+                                <i class='fas fa-star'></i>
+                                <i class='fas fa-star'></i>
+                                <i class='fas fa-star'></i>
+                                <i class='fas fa-star'></i>
+                            </span>
+                            <div>02/05/2021</div>
+                        </div>
+                    </div>
+                    <div class="user-rate-content">
+                        I really enjoy this game. Great mechanics, lovely art, great game pieces. Quick tip, listen to
+                        the instructions and DONT play this game with more than 4 people the first time you play. We
+                        made that mistake and it took 6 hours.
+                    </div>
+                </div>
+                <div class="user-rate">
+                    <div class="user-info">
+                        <div class="user-avt">
+                            <img src="./image/u4.png" alt="">
+                        </div>
+                        <div class="user-name">
+                            <span class="name">Brain L.</span>
+                            <span class="user-rating">
+                                <i class='fas fa-star'></i>
+                                <i class='fas fa-star'></i>
+                                <i class='fas fa-star'></i>
+                                <i class='fas fa-star'></i>
+                                <i class='far fa-star'></i>
+                            </span>
+                            <div>02/02/2021</div>
+                        </div>
+                    </div>
+                    <div class="user-rate-content">
+                        Really entertaining and thoroughly engrossing game. I loved it.
+                    </div>
+                </div>
+                <div class="user-rate">
+                    <div class="user-info">
+                        <div class="user-avt">
+                            <img src="./image/u2.png" alt="">
+                        </div>
+                        <div class="user-name">
+                            <span class="name">Emily C.</span>
+                            <span class="user-rating">
+                                <i class='fas fa-star'></i>
+                                <i class='fas fa-star'></i>
+                                <i class='fas fa-star'></i>
+                                <i class='far fa-star'></i>
+                                <i class='far fa-star'></i>
+                            </span>
+                            <div>01/20/2021</div>
+                        </div>
+                    </div>
+                    <div class="user-rate-content">
+                        So much fun with friends. Hard to learn and harder to teach so make sure everyone knows what
+                        they are getting into before buying and playing
+                        Really entertaining and thoroughly engrossing game. I loved it.
+                    </div>
+                </div>
+    </section>
+    <!-- customer review end -->
+
+
+
+
+
+    <!-- product recommendations -->
+
+    <section class="product_reco">
+        <div class="products">
+            <div class="container-products">
+                <div class="title-and-go-back">
+                    <h1 class="lg-title">Recommendations <i class="fa-solid fa-chevron-right "></i></h1>
+
+                </div>
+
+                <div class="product-items">
+                    <!-- single product -->
+                    <div class="product">
+                        <div class="product-content">
+                            <div class="product-img">
+                                <img src="image/product_7.jpeg" alt="product image">
+                            </div>
+                            <div class="product-btns">
+                                <button type="button" class="btn-cart"> add to cart
+                                    <span><i class="fas fa-plus"></i></span>
+                                </button>
+                                <button type="button" class="btn-buy"> buy now
+                                    <span><i class="fas fa-shopping-cart"></i></span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="product-info">
+                            <div class="product-info-top">
+                                <h2 class="sm-title">Board Game</h2>
+                                <div class="rating">1
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                </div>
+                            </div>
+                            <a href="#" class="product-name">DUNE IMPERIUM </a>
+                            <p class="product-price">$ 150.00</p>
+                            <p class="product-price">$ 133.00</p>
+                        </div>
+
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class="product">
+                        <div class="product-content">
+                            <div class="product-img">
+                                <img src="image/product_2.png" alt="product image">
+                            </div>
+                            <div class="product-btns">
+                                <button type="button" class="btn-cart"> add to cart
+                                    <span><i class="fas fa-plus"></i></span>
+                                </button>
+                                <button type="button" class="btn-buy"> buy now
+                                    <span><i class="fas fa-shopping-cart"></i></span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="product-info">
+                            <div class="product-info-top">
+                                <h2 class="sm-title">Board Game</h2>
+                                <div class="rating">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="far fa-star"></i></span>
+                                </div>
+                            </div>
+                            <a href="#" class="product-name">Kingdom Rush: Rift in Time</a>
+                            <p class="product-price">$ 150.00</p>
+                            <p class="product-price">$ 133.00</p>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class="product">
+                        <div class="product-content">
+                            <div class="product-img">
+                                <img src="image/product_3.png" alt="product image">
+                            </div>
+                            <div class="product-btns">
+                                <button type="button" class="btn-cart"> add to cart
+                                    <span><i class="fas fa-plus"></i></span>
+                                </button>
+                                <button type="button" class="btn-buy"> buy now
+                                    <span><i class="fas fa-shopping-cart"></i></span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="product-info">
+                            <div class="product-info-top">
+                                <h2 class="sm-title">Board Game</h2>
+                                <div class="rating">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="far fa-star"></i></span>
+                                </div>
+                            </div>
+                            <a href="#" class="product-name">Tapestry: Plans and Ploys </a>
+                            <p class="product-price">$ 150.00</p>
+                            <p class="product-price">$ 133.00</p>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class="product">
+                        <div class="product-content">
+                            <div class="product-img">
+                                <img src="image/product_4.png" alt="product image">
+                            </div>
+                            <div class="product-btns">
+                                <button type="button" class="btn-cart"> add to cart
+                                    <span><i class="fas fa-plus"></i></span>
+                                </button>
+                                <button type="button" class="btn-buy"> buy now
+                                    <span><i class="fas fa-shopping-cart"></i></span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="product-info">
+                            <div class="product-info-top">
+                                <h2 class="sm-title">Board Game</h2>
+                                <div class="rating">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="far fa-star"></i></span>
+                                </div>
+                            </div>
+                            <a href="#" class="product-name">Red Rising</a>
+                            <p class="product-price">$ 150.00</p>
+                            <p class="product-price">$ 133.00</p>
+                        </div>
+
+                        <div class="off-info">
+                            <h2 class="sm-title">25% off</h2>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+    </section>
+    <!-- product recommendations end-->
+
+
+
+
+    <!-- footer -->
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="./image/gk_logo.png" alt="">
+                <p>Our goal is to offer the best collection of Board Games & Puzzles at great prices
+                    with fast and fair shipping!</p>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h2>contact info</h2>
+                <a href="#" class="links"> <i class="fas fa-phone"></i> (855)545-GAME (4263) </a>
+                <a href="#" class="links"> <i class="fas fa-envelope"></i> gamekastle@gmail.com </a>
+                <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> 1350 Coleman Ave
+                </a>
+            </div>
+
+            <div class="box">
+                <h2>quick links</h2>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i> home </a>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i> all products </a>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i> new arrivals </a>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i> best sellers </a>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i> speicals </a>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i> review </a>
+            </div>
+
+            <div class="box">
+                <h2>newsletter</h2>
+                <p>subscribe for latest updates</p>
+                <input type="email" placeholder="your email" class="email">
+                <input type="submit" value="subscribe" class="submit-btn">
+                <img src="image/payment.png" class="payment-img" alt="">
+            </div>
+
+        </div>
+
+
+
+    </section>
+    <!-- footer end-->
+
+
+    <script src="js/script.js"></script>
+
+
+
+</body>
+
+</html>

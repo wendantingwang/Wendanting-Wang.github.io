@@ -648,3 +648,27 @@ img {
   height: 3rem;
   display: block;
 }
+
+
+/* confirmartion section */
+
+.confirmation{
+padding-top: 25rem;
+padding-bottom: 25rem;
+  text-align: center;
+}
+
+.confirmation i{
+  font-size: 10rem;
+  color: #427BE6;
+  padding-bottom: 2rem;
+}
+
+.confirmation span{
+  color: #ffffff;
+ margin-top: 20rem;
+}
+
+.confirmation .btn{
+  margin-top: 4rem;
+}
