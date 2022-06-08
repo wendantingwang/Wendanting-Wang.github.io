@@ -191,13 +191,15 @@ select {
 }
 
 .btn-continue {
-
-  color: #ffffff;
   background-color: #427BE6;
   font-size: 2rem;
   padding: 0.5em 2em;
   border-radius: 10px;
   margin: auto;
+}
+
+.btn-continue a{
+  color: #ffffff;
 }
 
 .btn-continue:hover{
