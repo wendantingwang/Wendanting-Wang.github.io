@@ -1,10 +1,9 @@
-
 :root {
     --bg-dark: #3b3c3d;
     --btn-blue: #427BE6;
     --box-shadow: 0px 5px 10px 0px rgba(110, 135, 181, 0.58);
     --box-shadow-hover: 0px 10px 20px 2px rgba(110, 135, 181, 0.58);
-  }
+}
 
 
 .breadcumb {
@@ -13,7 +12,7 @@
     padding-top: 10rem;
     background-color: #2C2C34;
     color: #ffffff;
-    
+
 }
 
 .breadcumb a {
@@ -51,8 +50,8 @@
 .small-img-group {
     display: flex;
     justify-content: space-between;
-    width: 40%;
-    margin-left: 30%;
+    width: 50%;
+    margin-left: 25%;
     margin-top: 1rem;
     align-items: center;
 }
@@ -121,7 +120,7 @@
     padding-right: 30%;
 }
 
-.prodetails .single-pro-details button{
+.prodetails .single-pro-details button {
     margin-top: 5%;
     height: 50px;
     width: 100%;
@@ -130,20 +129,20 @@
     color: #ffffff;
     font-size: 20px;
     cursor: pointer;
-    
+
 }
 
-.prodetails .single-pro-details button:hover{
+.prodetails .single-pro-details button:hover {
     background-color: var(--bg-dark);
-    
+
 }
 
 
 
 
 
-.description{
-    display:flex;
+.description {
+    display: flex;
 }
 
 
@@ -224,26 +223,26 @@
 
 
 
-.product-des{
+.product-des {
     margin-top: -2rem;
 }
 
-.product-des .lg-title{
+.product-des .lg-title {
     display: flex;
     margin-bottom: 2rem;
 }
 
-.product-des p{
+.product-des p {
     width: 80%;
     text-transform: none;
     font-size: 15px;
     color: #ffffff;
     line-height: 25px;
-    font-weight:lighter;
+    font-weight: lighter;
     margin-bottom: 3rem;
 }
 
- 
+
 
 
 
@@ -331,7 +330,7 @@
 }
 
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 800px) {
     .prodetails {
         display: flex;
         flex-direction: column;
@@ -340,14 +339,14 @@
     .single-pro-image {
         width: 100%;
         margin: 0px;
-    
+
     }
 
-    .prodetails .single-pro-details{
-        width: 100%; 
+    .prodetails .single-pro-details {
+        width: 100%;
     }
 
-    .product-des p{
+    .product-des p {
         width: 100%;
     }
 }

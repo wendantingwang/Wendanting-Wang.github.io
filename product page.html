@@ -18,6 +18,7 @@
 <body>
     <!-- navnar section -->
 
+
     <header class="header">
 
         <a href="./index.html" class="logo"><img src="./image/gk_logo.png" alt=""></a>
@@ -109,20 +110,21 @@
     <!-- product details -->
     <section class="prodetails">
         <div class="single-pro-image">
-            <img src="./image/product_1.png" class="mainimg" id=“MainImg” alt="">
+            <img id="mainImg" src="./image/product_1.png">
             <div class="small-img-group">
                 <div class="small-img-col">
-                    <img src="./image/product_sm1.jpeg" class="small-img" alt="">
+                    <img id="thumb1" src="./image/product_1.png">
                 </div>
                 <div class="small-img-col">
-                    <img src="./image/product_sm2.jpeg" class="small-img" alt="">
+                    <img id="thumb2" src="./image/product_sm1.png">
                 </div>
                 <div class="small-img-col">
-                    <img src="./image/product_sm3.jpeg" class="small-img" alt="">
+                    <img id="thumb3" src="./image/product_sm2.png">
                 </div>
                 <div class="small-img-col">
-                    <img src="./image/product_sm4.jpeg" class="small-img" alt="">
+                    <img id="thumb4" src="./image/product_sm3.png">
                 </div>
+
             </div>
         </div>
 
@@ -521,6 +523,36 @@
 
     </section>
     <!-- footer end-->
+
+    <!-- <script>
+
+        var MainImg = document.getElementById("MainImg");
+        var smallimg = document.getElementsByClassName("small-img");
+
+        smallimg[0].onclick = function(){
+            MainImg.src = smallimg[0].src;
+        }
+
+        smallimg[1].onclick = function(){
+            MainImg.src = smallimg[1].src;
+        }
+
+        smallimg[2].onclick = function(){
+            MainImg.src = smallimg[2].src;
+
+        }
+
+        smallimg[3].onclick = function(){
+            MainImg.src = smallimg[3].src;
+
+        }
+
+        smallimg[4].onclick = function(){
+            MainImg.src = smallimg[4].src;
+
+        }
+
+    </script> -->
 
 
     <script src="js/script.js"></script>
