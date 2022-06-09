@@ -150,22 +150,10 @@
 
 
 
+
 @media screen and (min-width: 1336px) {
     .l-product-items {
         grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media screen and (min-width: 1957px) {
-    .l-product-items {
-        grid-template-columns: repeat(4, 1fr);
-    }
-}
-
-
-@media screen and (min-width: 1957px) {
-    .l-product-items {
-        grid-template-columns: repeat(4, 1fr);
     }
 }
 

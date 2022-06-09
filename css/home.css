@@ -633,7 +633,7 @@ img {
   display: inline-block;
   padding: .8rem 3rem;
   font-size: 1.5rem;
-  border-radius: 5rem;
+  border-radius: 10px;
   color: #ffffff;
   cursor: pointer;
   background: #427BE6
